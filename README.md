@@ -1,1 +1,1 @@
-# my-portolio-project
+# paint-calculator-bot
