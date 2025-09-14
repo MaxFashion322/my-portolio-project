@@ -1,8 +1,8 @@
 package org.example;
 
 public class Rectangle extends Hole {
-    private double height;
-    private double length;
+    private final double height;
+    private final double length;
 
     public Rectangle(double _height,double _length){
         height=_height;

@@ -17,7 +17,4 @@ public class Room {
         }
         return total;
     }
-//    public ArrayList<Wall> getTotalRoomConsumption(){
-//        return walls;
-//    }
 }

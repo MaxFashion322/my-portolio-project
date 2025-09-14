@@ -1,8 +1,8 @@
 package org.example;
 
 public class Triangle extends Hole{
-    private double base;
-    private double height;
+    private final double base;
+    private final double height;
 
     public Triangle(double _base,double _height){
         base = _base;

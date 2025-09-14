@@ -9,8 +9,11 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.*;
 
 public class Bot extends TelegramLongPollingBot {
+
     // List of users who started chatting with the bot
     private final Map<Long, UserSession> sessions = new HashMap<>();
+
+    // This variable helps to hide our Telegram Token and Username
     private final Dotenv dotenv = Dotenv.load();
 
     @Override
@@ -45,7 +48,7 @@ public class Bot extends TelegramLongPollingBot {
             sessions.put(userId, userSession);
 
             startCommandReceived(userId);
-            sendMessage(userId, "Let's start calculate!" + "\n" +
+            sendMessage(userId, "Let's start calculating!" + "\n" +
                     "\n" + "Firstly, please enter the amount of rooms you would paint: ");
             return;
         }

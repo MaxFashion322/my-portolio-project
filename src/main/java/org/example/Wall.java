@@ -2,9 +2,9 @@ package org.example;
 import java.util.List;
 
 public class Wall extends Rectangle {
-    public double layers;
-    public double consumption;
-    public List<Hole> holes;
+    private final double layers;
+    private final double consumption;
+    private final List<Hole> holes;
 
     public Wall(double _height, double _length, double _layers, double _consumption, List<Hole> _holes) {
         super(_height,_length);

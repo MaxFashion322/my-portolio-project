@@ -1,7 +1,7 @@
 package org.example;
 
 public class Circle extends Hole {
-    private double radius;
+    private final double radius;
 
     public Circle(double _radius){
         radius=_radius;

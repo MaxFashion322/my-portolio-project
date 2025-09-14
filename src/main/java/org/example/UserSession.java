@@ -25,22 +25,4 @@ public class UserSession {
     public Wall buildWall(){
         return new Wall(height,length,layers,consumption,holes);
     }
-
-    public Room buildRoom(){
-        return new Room(new ArrayList<>(currentRoomWalls));
-    }
-
-
-
-//    public enum Step {
-//        Ask_Room_Count,
-//        Ask_Wall_Count,
-//        Ask_Height,
-//        Ask_Width,
-//        Ask_Layers,
-//        Ask_Consumption,
-//        Ask_Holes,
-//        Ask_Hole_Area,
-//        Finished
-//    }
 }
