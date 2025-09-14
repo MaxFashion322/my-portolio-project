@@ -17,7 +17,7 @@ public class UserSession {
     public double layers;
     public double consumption;
     public double holeQty;
-    public int currentHoleIndex = 0;
+    public int currentHoleIndex;
     public double tempParam1;
     public double tempParam2;
     public List<Hole> holes = new ArrayList<>();
